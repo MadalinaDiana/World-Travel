@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <head>
+  <title>Finalizare comanda</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="css/finalizare.css" rel="stylesheet">
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">World Travel</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Vacante.html">Vacante</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pachete promotionale.html">Pachete Promotionale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cautav.html">Cauta vacante</a>
+              </li>
+              <div class="btn btn-outline-white rounded-circle active">
+                <a class="fas fa-shopping-cart" href="Cosul meu.html"></a>
+                <span class="sr-only">(current)</span>
+            </div>
+            </ul>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span> 
+                    <strong>Profil Client</strong>
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+                
+                <ul class="dropdown-menu">
+                    <li>
+                        <div class="navbar-login">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <p class="text-center">
+                                        <span class="glyphicon glyphicon-user icon-size"></span>
+                                    </p>
+                                </div>
+                                <div class="col-lg-9">
+                                  <p class="text-left"><strong>Nume Client</strong></p>
+                                  <p class="text-left small">emailClient..@email.com</p>
+                                  <p class="text-left">
+                                      <a href="#" class="btn btn-primary btn-block btn-sm">Actualizare profil</a>
+                                  </p>
+                              </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider"></li>
+                            <li>
+                                <div class="navbar-login navbar-login-session">
+                                    <div class="row">
+                                        <div class="col-lg-9">
+                                            <p>
+                                                <a href="../index.html" class="btn btn-danger btn-block">Deconectare</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                </ul>
+    
+      </nav>
+      <br><br><br><br>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <div class="content">
+      <div class="container">
+              <div class="row">
+          
+                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30 text-center">
+                              <h2>Vacante peste tot in lume.</h2>
+                              </div>
+                              </div>
+          <div class="row">
+          
+                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb30">
+                              <div class="tour-booking-form">
+                            <form action="adauga.php" method="POST">
+                                      <div class="row">
+                                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                              <h4 class="tour-form-title">Rezerva calatoria:</h4>
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                              <div class="form-group">
+                                                  <label class="control-label required" for="select">Destinatii</label>
+                                                  <div class="select">
+                                                      <select id="select" name="select" class="form-control">
+                                                          <option value="">Unde vrei sa calatoresti?</option>
+                                                          <option value="">Budapesta</option>
+                                                          <option value="">Paris</option>
+                                                          <option value="">Switzerland</option>
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                              <div class="form-group">
+                                                  <label class="control-label" for="datepicker">Check in</label>
+                                                  <div class="input-group">
+                                                      <input id="datepicker" name="datepicker" type="text" placeholder="Data" class="form-control" required>
+                                                      <span class="input-group-addon"><i class="fa fa-calendar"></i></span> </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                              <div class="form-group">
+                                                  <label class="control-label required" for="select">Numar persoane:</label>
+                                                  <div class="select">
+                                                      <select id="select" name="select" class="form-control">
+                                                          <option value="">Numar persoane:</option>
+                                                          <option value="">01</option>
+                                                          <option value="">02</option>
+                                                          <option value="">+3</option>
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                              <div class="form-group">
+                                                  <label class="control-label required" for="select">Buget</label>
+                                                  <div class="select">
+                                                      <select id="select" name="select" class="form-control">
+                                                          <option value="">Stadard</option>
+                                                          <option value="">Minim</option>
+                                                          <option value="">Maxim</option>
+                                                      </select>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt30">
+                                              <h4 class="tour-form-title">Detalii pentru calatorie</h4>
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                              <div class="form-group">
+                                                  <label class="control-label" for="name">Nume</label>
+                                                  <input id="name" type="text"name="name" placeholder="Nume" class="form-control" required>
+                                              </div>
+                                          </div>
+                                          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                              <div class="form-group">
+                                                  <label class="control-label" for="email"> Email</label>
+                                                  <input type="email" name="email" placeholder="xxxx@xxxx.xxx" class="form-control" required>
+                                              </div>
+                                          </div>
+                                          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                              <div class="form-group">
+                                                  <label class="control-label" for="phone"> Nr Telefon</label>
+                                                  <input id="phone" type="text"name="phone" placeholder="(222) 222-2222" class="form-control" required>
+                                              </div>
+                                          </div>
+                                          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                              <div class="form-group">
+                                                  <label class="control-label" for="tara">Tara</label>
+                                                  <input id="tara" type="text" name="tara" placeholder="Romania" class="form-control" required>
+                                              </div>
+                                          </div>
+                                          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                                              <div class="form-group">
+                                                  <label class="control-label" for="oras">Oras</label>
+                                                  <input id="oras" type="text" name="oras" placeholder="Baia Mare" class="form-control" required>
+                                              </div>
+                                          </div>
+                                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                              <div class="form-group">
+                                                  <label class="control-label" for="cerinte">Descrie cerintele tale pentru calatorie:</label>
+                                                  <textarea class="form-control" id="cerinte" name="cerinte" rows="4" placeholder="Scrie cerintele tale"></textarea>
+                                              </div>
+                                          </div>
+                                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                              <button type="submit" name="singlebutton" class="btn btn-primary" href="adauga.php">Trimite rezervarea</button>
+                                          </div>
+                                      </div>
+                                      </form>
+                              </div>
+                              
+                          </div>
+          </div>
+      </div>
+      </div>
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; World Travel 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
